@@ -1,0 +1,65 @@
+
+Spring Cloud Port : 8888
+
+Loan Clearnce project port : 7000.
+
+profit calculation Port : 8000
+
+---------------------------------------------
+
+Coud Config Server : 
+here we can configure all property fiels and read it from here.
+for instance multi language files we can stroe.
+environement based files we can store.
+we can create artifict with out config files 
+we can mentain goit easy  and use cebnte version.
+ and run with what ever environment we want by doing configuration.
+
+config-url :
+http://localhost:8888/loanclearnceproject/default
+
+Loans Url :
+
+http://localhost:7000/v1/fetchloans
+http://localhost:7001/v1/fetchloans
+{"loanName":"sra","loanAmount":"1000000","environment":"7001"}
+
+http://localhost:7000/v1/fetchloans
+
+http://localhost:7000/v1/saveloans/ACCESSLOAN/1000000
+
+/v1/saveloans/{loanname}/{loanamount}
+
+{"id":100,"loanName":"ACCESSLOAN","loanAmount":"1000000","environment":"7000"}
+
+
+http://localhost:7000/swagger-ui.html
+http://localhost:7000/swagger-ui/index.htm
+
+actuator :
+## actuvator for montring 
+##Advantages of Monitoring/Managing the Application
+##It increases customer satisfaction.It reduces downtime.It boosts productivity.It improves Cybersecurity Management.It increases the conversion rate.
+
+http://localhost:7000/actuator
+
+-------------------------------------
+
+Save Loans :
+
+{
+  "id": 1,
+  "loanName": "ACCESS_PEROSNAL_LOAN",
+  "loanAmount": "1000000",
+  "environment": "7000",
+  "startDate": "12-08-2022",
+  "tenure": "5",
+  "yrmo": "YR",
+  "interstrate": "10.5",
+  "loanvendor": "ACCESS",
+  "typeofloan": "PERSONAL",
+  "transDate": "2022-08-25T07:55:23.288+00:00"
+}
+
+
+

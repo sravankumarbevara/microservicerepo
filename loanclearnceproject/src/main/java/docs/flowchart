@@ -1,0 +1,5 @@
+Flow chart :
+------------
+Loan service will connect to cloud config server
+cloud config server will connect to git repo
+and fecth the data from there and make use of it.
